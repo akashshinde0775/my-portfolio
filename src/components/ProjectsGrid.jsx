@@ -23,8 +23,8 @@ const ProjectsGrid = () => {
         "JavaScript",
         "PHP"
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      liveUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
+      githubUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
     },
     {
       id: 2,
@@ -37,8 +37,8 @@ const ProjectsGrid = () => {
         "YOLO",
         "React"
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      liveUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
+      githubUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
     },
     {
       id: 3,
@@ -51,8 +51,8 @@ const ProjectsGrid = () => {
         "Python",
         "Haarcascade"
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
     },
     
   ];
