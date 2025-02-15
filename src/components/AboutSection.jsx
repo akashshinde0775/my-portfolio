@@ -97,7 +97,7 @@ const AboutSection = ({
 
                 {/* Download CV Button */}
                 <a
-                  href="/resume/Akash Shinde Resume 2.pdf"
+                  href="public/resume/Akash Shinde Resume 2.pdf"
                   download="Akash_Shinde_Resume.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
