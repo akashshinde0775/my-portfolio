@@ -1,12 +1,13 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
+import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
 const AboutSection = ({
   name = "Akash Shinde",
   title = "AI & DS Engineer",
   location = "Solapur, Maharastra",
-  // experience = "8+ years",
+  projects = "3+ Completed",
   email = "akashshinde0775@gmail.com",
   bio = `Passionate AI & Data Science professional with expertise in machine learning, computer vision, web development, and both frontend & backend technologies. 
   Skilled in AI/ML tools, always driven to innovate and solve complex problems.`,
@@ -18,12 +19,12 @@ const AboutSection = ({
     twitter: "https://twitter.com/akashshinde0775"
   }
 }) => {
-  // const stats = [
-  //  // { label: 'Years Experience', value: '8+' },
-  //   { label: 'Projects Completed', value: '50+' },
-  //   { label: 'Companies Worked', value: '5' },
-  //   { label: 'Open Source', value: '20+' }
-  // ];
+  const stats = [
+    { label: 'Projects Completed', value: '3+' },
+    { label: 'Certifications Earned', value: '5+' },
+    { label: 'Skills Learned', value: '15+' },
+    { label: 'Papers & Publications', value: '1+' } // If you've worked on a conference paper
+];
 
   return (
     <div className="min-h-screen bg-gray-900 p-6 lg:p-12">
@@ -88,10 +89,10 @@ const AboutSection = ({
                       {email}
                     </a>
                   </div>
-                  {/* <div className="flex items-center gap-3 text-gray-400">
-                    <Calendar size={18} />
-                    <span>{experience} Experience</span>
-                  </div> */}
+                  <div className="flex items-center gap-3 text-gray-400">
+                    <Project size={18} />
+                    <span>{projects} Projects </span>
+                  </div>
                 </div>
 
                 {/* Download CV Button */}
@@ -119,7 +120,7 @@ const AboutSection = ({
               </div>
             </div>
 
-            {/* Stats Grid
+            {/* /Stats Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               {stats.map((stat, index) => (
                 <div key={index} className="bg-gray-800 rounded-xl p-6 border border-gray-700 text-center">
@@ -127,7 +128,7 @@ const AboutSection = ({
                   <div className="text-sm text-gray-400">{stat.label}</div>
                 </div>
               ))}
-            </div> */}
+            </div>
 
             {/* What I Do Section */}
             <div className="bg-gray-800 rounded-xl p-8 border border-gray-700">
