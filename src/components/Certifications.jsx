@@ -1,10 +1,10 @@
 import React from 'react';
 import { AiOutlineTrophy, AiOutlineCalendar } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
-import certificate1 from '..assets/certificate1.jpg';
-import certificate2 from '..assets/certificate2.jpg';
-import certificate3 from '..assets/certificate3.jpg';
-import certificate4 from '..assets/certificate4.jpg';
+import certificate1 from '../assets/certificate1.jpg';
+import certificate2 from '../assets/certificate2.jpg';
+import certificate3 from '../assets/certificate3.jpg';
+import certificate4 from '../assets/certificate4.jpg';
 
 
 const Certifications = () => {
