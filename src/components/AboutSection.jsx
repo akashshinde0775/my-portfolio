@@ -1,6 +1,6 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
-import resume from '../assets/Akash Shinde Resume 2.pdf';
+import resume from '../assets/resume.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
@@ -99,7 +99,7 @@ const AboutSection = ({
                 {/* Download CV Button */}
                 <a
                   href={resume}
-                  download="Akash_Shinde_Resume.pdf"
+                  download="resume.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
                 >
