@@ -1,5 +1,6 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
+import resume from '../assets/Akash Shinde Resume 2.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
@@ -24,7 +25,7 @@ const AboutSection = ({
     { label: 'Certifications Earned', value: '5+' },
     { label: 'Skills Learned', value: '15+' },
     { label: 'Papers & Publications', value: '1+' } // If you've worked on a conference paper
-];
+  ];
 
   return (
     <div className="min-h-screen bg-gray-900 p-6 lg:p-12">
@@ -97,7 +98,7 @@ const AboutSection = ({
 
                 {/* Download CV Button */}
                 <a
-                  href="public/resume/Akash Shinde Resume 2.pdf"
+                  href={resume}
                   download="Akash_Shinde_Resume.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
