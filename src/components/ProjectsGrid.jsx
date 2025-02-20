@@ -28,7 +28,7 @@ const ProjectsGrid = () => {
     },
     {
       id: 2,
-      title: "Student Abnormal Behavior Detection",
+      title: "AI-Based Surveillance for Exam Integrity: Real-Time Detection of Abnormal Student Behavior",
       description: "A machine learning-based system for detecting abnormal student behavior during exams, including unauthorized device usage and suspicious actions in real-time.",
       image: studentAbnormalImage,
       category: "ai",
@@ -42,6 +42,104 @@ const ProjectsGrid = () => {
     },
     {
       id: 3,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 4,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 5,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 6,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 7,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 8,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 9,
+      title: "Face Detection",
+      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
+      image: faceDetectionImage,
+      category: "ai",
+      technologies: [
+        "OpenCV",
+        "Python",
+        "Haarcascade"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 10,
       title: "Face Detection",
       description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
       image: faceDetectionImage,
