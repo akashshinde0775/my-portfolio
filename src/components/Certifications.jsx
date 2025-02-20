@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineTrophy, AiOutlineCalendar } from 'react-icons/ai';
 import { FiExternalLink } from 'react-icons/fi';
 import certificate1 from '../assets/certificate1.jpg';
@@ -61,6 +61,11 @@ const Certifications = () => {
     },
   ];
   
+  const [visibleCertificates, setVisibleCertificates] = useState(4);
+
+  const loadMore = () => {
+    setVisibleCertificates((prev) => prev + 4);
+  };
 
   const CertificationCard = ({ certification }) => (
     <div className="group bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500/50 
@@ -99,7 +104,6 @@ const Certifications = () => {
         ))}
       </div>
 
-      {/* Updated Link to Show Certificate in a New Tab */}
       <a
         href={certification.certificatePath}
         target="_blank"
@@ -115,7 +119,6 @@ const Certifications = () => {
   return (
     <div className="min-h-screen bg-gray-900 p-6 lg:p-12">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
             Certifications & Achievements
@@ -126,15 +129,26 @@ const Certifications = () => {
           </p>
         </div>
 
-        {/* Certifications Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {certifications.map((certification) => (
+          {certifications.slice(0, visibleCertificates).map((certification) => (
             <CertificationCard
               key={certification.id}
               certification={certification}
             />
           ))}
         </div>
+
+        {visibleCertificates < certifications.length && (
+          <div className="text-center mt-8">
+            <button
+              onClick={loadMore}
+              className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-400 transition"
+            >
+              Load More
+            </button>
+          </div>
+        )}
+
       </div>
     </div>
   );
