@@ -11,6 +11,16 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
+      title: "AI-Based Surveillance for Exam Integrity: Real-Time Detection of Abnormal Student Behavior",
+      provider: "ICSADL (4th International Conference)",
+      date: "15 Feb 2025",
+      certificatePath: certificate5, 
+      badgeColor: "red",
+      skills: ["AI", "Python", "OpenCV", "YOLO"],
+      description: "Participation in the 4th International Conference showcasing innovative approaches for maintaining exam integrity using AI-based surveillance.",
+    },
+    {
+      id: 2,
       title: "Career Essentials in Generative AI",
       provider: "Microsoft and LinkedIn",
       date: "2 Dec 2024",
@@ -20,7 +30,7 @@ const Certifications = () => {
       description: "Certification covering the fundamentals of Generative AI, its applications, and ethical considerations."
     },
     {
-      id: 2,
+      id: 3,
       title: "Machine Learning A-Z",
       provider: "Udemy",
       date: "26 April 2024",
@@ -30,7 +40,7 @@ const Certifications = () => {
       description: "Comprehensive course on Machine Learning concepts, covering data preprocessing, regression, classification, and model evaluation."
     },
     {
-      id: 3,
+      id: 4,
       title: "Python (Basics)",
       provider: "Hackerrank",
       date: "30 Nov 2024",
@@ -40,7 +50,7 @@ const Certifications = () => {
       description: "Certification demonstrating proficiency in Python basics By solving problems on Hackerrank"
     },
     {
-      id: 4,
+      id: 5,
       title: "Mobile Application Development",
       provider: "Dream Technology Company",
       date: "17 Aug 2022",
@@ -49,17 +59,6 @@ const Certifications = () => {
       skills: ["Java", "XML", "Kotlin"],
       description: "Industrial training certification in mobile app development, focusing on Android app design and implementation using Java and Kotlin."
     },
-    {
-      id: 5,
-      title: "AI-Based Surveillance for Exam Integrity: Real-Time Detection of Abnormal Student Behavior",
-      provider: "ICSADL (4th International Conference)",
-      date: "15 Feb 2025",
-      certificatePath: certificate5, 
-      badgeColor: "red",
-      skills: ["AI", "Python", "OpenCV", "YOLO"],
-      description: "Participation in the 4th International Conference showcasing innovative approaches for maintaining exam integrity using AI-based surveillance.",
-    }
-    
   ];
   
 
