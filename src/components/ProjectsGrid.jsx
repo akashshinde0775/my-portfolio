@@ -53,106 +53,78 @@ const ProjectsGrid = () => {
       ],
       liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
       githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-    },
+    }, 
     {
       id: 4,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
+      title: "Weather App",
+      description: "A simple weather forecasting application that provides current weather details using OpenWeather API and displays information using a clean and responsive UI.",
+      image: weatherAppImage,
+      category: "web",
       technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "API Integration"
       ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      liveUrl: "https://github.com/akashshinde0775/weather-app.git",
+      githubUrl: "https://github.com/akashshinde0775/weather-app.git",
     },
     {
       id: 5,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
+      title: "Task Manager",
+      description: "A productivity application that allows users to create, update, delete, and manage their daily tasks efficiently with a minimalistic user interface.",
+      image: taskManagerImage,
+      category: "web",
       technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
+        "React",
+        "Tailwind CSS",
+        "JavaScript"
       ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      liveUrl: "https://github.com/akashshinde0775/task-manager.git",
+      githubUrl: "https://github.com/akashshinde0775/task-manager.git",
     },
     {
       id: 6,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
+      title: "Android Expense Tracker",
+      description: "An Android application for tracking daily expenses, visualizing spending patterns, and managing budgets effectively.",
+      image: expenseTrackerImage,
+      category: "android",
       technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
+        "Java",
+        "XML",
+        "SQLite"
       ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      liveUrl: "https://github.com/akashshinde0775/expense-tracker.git",
+      githubUrl: "https://github.com/akashshinde0775/expense-tracker.git",
     },
     {
       id: 7,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
+      title: "To-Do List Application",
+      description: "A simple to-do list application to help users manage tasks and stay organized with intuitive drag-and-drop features.",
+      image: todoListImage,
+      category: "web",
       technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
+        "HTML",
+        "CSS",
+        "JavaScript"
       ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+      liveUrl: "https://github.com/akashshinde0775/todo-list.git",
+      githubUrl: "https://github.com/akashshinde0775/todo-list.git",
     },
     {
       id: 8,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
+      title: "Plant Disease Detection",
+      description: "An AI project that uses image classification techniques to detect plant diseases through leaf images, helping farmers take timely actions.",
+      image: plantDiseaseImage,
       category: "ai",
       technologies: [
-        "OpenCV",
         "Python",
-        "Haarcascade"
+        "TensorFlow",
+        "Computer Vision"
       ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-    },
-    {
-      id: 9,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
-      technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
-      ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-    },
-    {
-      id: 10,
-      title: "Face Detection",
-      description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
-      image: faceDetectionImage,
-      category: "ai",
-      technologies: [
-        "OpenCV",
-        "Python",
-        "Haarcascade"
-      ],
-      liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-      githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
-    },
-    
+      liveUrl: "https://github.com/akashshinde0775/plant-disease-detection.git",
+      githubUrl: "https://github.com/akashshinde0775/plant-disease-detection.git",
+    }
   ];
   
 
