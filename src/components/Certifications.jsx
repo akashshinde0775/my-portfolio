@@ -5,7 +5,7 @@ import certificate1 from '../assets/certificate1.jpg';
 import certificate2 from '../assets/certificate2.jpg';
 import certificate3 from '../assets/certificate3.jpg';
 import certificate4 from '../assets/certificate4.jpg';
-
+import certificate5 from '../assets/certificate5.pdf';
 
 const Certifications = () => {
   const certifications = [
@@ -14,7 +14,7 @@ const Certifications = () => {
       title: "Career Essentials in Generative AI",
       provider: "Microsoft and LinkedIn",
       date: "2 Dec 2024",
-      certificatePath: certificate1, // Local path
+      certificatePath: certificate1, 
       badgeColor: "blue",
       skills: ["Computer Ethics", "Artificial Intelligence (AI)", "Generative AI"],
       description: "Certification covering the fundamentals of Generative AI, its applications, and ethical considerations."
@@ -24,7 +24,7 @@ const Certifications = () => {
       title: "Machine Learning A-Z",
       provider: "Udemy",
       date: "26 April 2024",
-      certificatePath: certificate2, // Local path
+      certificatePath: certificate2, 
       badgeColor: "green",
       skills: ["AI", "Python", "R"],
       description: "Comprehensive course on Machine Learning concepts, covering data preprocessing, regression, classification, and model evaluation."
@@ -34,7 +34,7 @@ const Certifications = () => {
       title: "Python (Basics)",
       provider: "Hackerrank",
       date: "30 Nov 2024",
-      certificatePath: certificate3, // Local path
+      certificatePath: certificate3, 
       badgeColor: "purple",
       skills: ["Python"],
       description: "Certification demonstrating proficiency in Python basics By solving problems on Hackerrank"
@@ -44,11 +44,22 @@ const Certifications = () => {
       title: "Mobile Application Development",
       provider: "Dream Technology Company",
       date: "17 Aug 2022",
-      certificatePath: certificate4, // Local path
+      certificatePath: certificate4, 
       badgeColor: "orange",
       skills: ["Java", "XML", "Kotlin"],
       description: "Industrial training certification in mobile app development, focusing on Android app design and implementation using Java and Kotlin."
+    },
+    {
+      id: 5,
+      title: "AI-Based Surveillance for Exam Integrity: Real-Time Detection of Abnormal Student Behavior",
+      provider: "ICSADL (4th International Conference)",
+      date: "15 Feb 2025",
+      certificatePath: certificate5, 
+      badgeColor: "red",
+      skills: ["AI", "Python", "OpenCV", "YOLO"],
+      description: "Participation in the 4th International Conference showcasing innovative approaches for maintaining exam integrity using AI-based surveillance.",
     }
+    
   ];
   
 
