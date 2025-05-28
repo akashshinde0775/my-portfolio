@@ -99,7 +99,7 @@ const AboutSection = ({
                 {/* Download CV Button */}
                 <a
                   href={Resume}
-                  download="resume.pdf"
+                  download="Resume.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
                 >
