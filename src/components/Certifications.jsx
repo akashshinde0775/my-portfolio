@@ -6,6 +6,7 @@ import certificate2 from '../assets/certificate2.jpg';
 import certificate3 from '../assets/certificate3.jpg';
 import certificate4 from '../assets/certificate4.jpg';
 import certificate5 from '../assets/certificate5.pdf';
+import certificate6 from '../assets/certificate6.pdf';
 
 const Certifications = () => {
   const certifications = [
@@ -58,6 +59,16 @@ const Certifications = () => {
       badgeColor: "orange",
       skills: ["Java", "XML", "Kotlin"],
       description: "Industrial training certification in mobile app development, focusing on Android app design and implementation using Java and Kotlin."
+    },
+    {
+      id: 6,
+      title: "Fundamentals of Deep Learning",
+      provider: "NVIDIA",
+      date: "1 jun 2025",
+      certificatePath: certificate6, 
+      badgeColor: "green",
+      skills: ["Deep Learning"],
+      description: "Completed NVIDIA’s Deep Learning course, gaining hands-on experience with CNNs, ANNs, transfer learning, VGG16, and real-world dataset applications."
     },
   ];
   
