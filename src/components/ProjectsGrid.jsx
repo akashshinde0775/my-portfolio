@@ -6,6 +6,7 @@ import { AiOutlineLink } from 'react-icons/ai';
 import esharkImage from "../assets/eshark.png";
 import faceDetectionImage from "../assets/face detection.webp";
 import studentAbnormalImage from "../assets/student abnormal.jpg";
+import vehiclesurveillanceImage from "../assets/vehicle.png"
 
 const ProjectsGrid = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -53,6 +54,21 @@ const ProjectsGrid = () => {
       ],
       liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
       githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
+    },
+    {
+      id: 4,
+      title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
+      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
+      image: vehiclesurveillanceImage,
+      category: "ai",
+      technologies: [
+        "Python",
+        "YOLOv8",
+        "DeepSort",
+        "OpenCV"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
+      githubUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
     }, 
   ];
   
