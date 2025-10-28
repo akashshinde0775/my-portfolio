@@ -137,13 +137,14 @@ const AboutSection = ({
               <div className="grid sm:grid-cols-2 gap-6">
                 {[
                   {
-                    title: "Web Development 🌐",
-                    description: "Crafting dynamic, responsive, and scalable web applications using modern frontend and backend technologies. Focused on performance, user experience, and seamless functionality."
+                    title: "Artificial Intelligence 🤖",
+                    description: "Building intelligent models for data-driven solutions. Experienced in computer vision, predictive analytics, and real-time AI applications using Python, OpenCV, and deep learning frameworks."
                   },
                   {
-                    title: "Machine Learning 🤖",
-                    description: "Building intelligent models for data-driven solutions. Experienced in computer vision, predictive analytics, and real-time AI applications using Python, OpenCV, and deep learning frameworks."
+                    title: "Web Development 🌐",
+                    description: "Crafting dynamic, responsive, and scalable web applications using modern frontend and backend technologies. Focused on performance, user experience, and seamless functionality."
                   }
+                  
                 ].map((item, index) => (
                   <div key={index} className="p-6 bg-gray-900/50 rounded-xl">
                     <h4 className="text-lg font-semibold text-white mb-2">{item.title}</h4>
