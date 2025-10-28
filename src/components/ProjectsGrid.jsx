@@ -48,9 +48,10 @@ const ProjectsGrid = () => {
       image: faceDetectionImage,
       category: "ai",
       technologies: [
+        "Deep Learning",
         "OpenCV",
         "Python",
-        "Haarcascade"
+        "MTCNN",
       ],
       liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
       githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
