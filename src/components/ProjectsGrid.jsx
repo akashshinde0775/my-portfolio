@@ -6,11 +6,11 @@ import { AiOutlineLink } from 'react-icons/ai';
 import esharkImage from "../assets/eshark.png";
 import faceDetectionImage from "../assets/face detection.webp";
 import studentAbnormalImage from "../assets/student abnormal.jpg";
-import vehiclesurveillanceImage from "../assets/vehicle.png";
+import vehiclesurveillanceImage from "../assets/vehicle.png"
+import FeedbackERPImage from "../assets/feedback.png";
 
 const ProjectsGrid = () => {
   const [activeFilter, setActiveFilter] = useState('all');
-  const [visibleCount, setVisibleCount] = useState(4); // 👈 Show first 4 initially
 
   const projects = [
     {
@@ -19,7 +19,12 @@ const ProjectsGrid = () => {
       description: "A full-stack e-commerce platform designed with real-time inventory management and payment processing features, built using modern technologies for a seamless shopping experience.",
       image: esharkImage,
       category: "web",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP"
+      ],
       liveUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
       githubUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
     },
@@ -29,7 +34,11 @@ const ProjectsGrid = () => {
       description: "A machine learning-based system for detecting abnormal student behavior during exams, including unauthorized device usage and suspicious actions in real-time.",
       image: studentAbnormalImage,
       category: "ai",
-      technologies: ["Python", "YOLO", "React"],
+      technologies: [
+        "Python",
+        "YOLO",
+        "React"
+      ],
       liveUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
       githubUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
     },
@@ -39,42 +48,47 @@ const ProjectsGrid = () => {
       description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
       image: faceDetectionImage,
       category: "ai",
-      technologies: ["Deep Learning", "OpenCV", "Python", "MTCNN"],
+      technologies: [
+        "Deep Learning",
+        "OpenCV",
+        "Python",
+        "MTCNN",
+      ],
       liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
       githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
     },
     {
       id: 4,
       title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
-      description: "AI-based vehicle surveillance system that detects, classifies, tracks, and recognizes license plates in real-time.",
+      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
       image: vehiclesurveillanceImage,
       category: "ai",
-      technologies: ["Python", "YOLOv8", "DeepSort", "OpenCV"],
+      technologies: [
+        "Python",
+        "YOLOv8",
+        "DeepSort",
+        "OpenCV"
+      ],
       liveUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
       githubUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
-    },
+    }, 
     {
       id: 5,
-      title: "Machine Learning Algorithm Recommendation System",
-      description: "A system that suggests the best-suited ML algorithm for a given dataset type (classification, regression, clustering).",
-      image: faceDetectionImage,
-      category: "ai",
-      technologies: ["Python", "Scikit-Learn", "Streamlit"],
-      liveUrl: "https://github.com/akashshinde0775/ML-Algorithm-Recommendation.git",
-      githubUrl: "https://github.com/akashshinde0775/ML-Algorithm-Recommendation.git",
-    },
-    {
-      id: 6,
-      title: "Smart Waste Management (NagarShuddhi)",
-      description: "An IoT and AI-powered waste monitoring solution to enhance urban cleanliness and optimize collection routes.",
-      image: esharkImage,
-      category: "ai",
-      technologies: ["IoT", "AI", "Python", "Flask"],
-      liveUrl: "https://github.com/akashshinde0775/NagarShuddhi.git",
-      githubUrl: "https://github.com/akashshinde0775/NagarShuddhi.git",
-    },
+      title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
+      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
+      image: FeedbackERPImage,
+      category: "web",
+      technologies: [
+        "ReactJS",
+        "NodeJS",
+        "TailwindCSS",
+        "MongoDB"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
+      githubUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
+    }, 
   ];
-
+  
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'ai', name: 'AI/ML' },
@@ -113,8 +127,12 @@ const ProjectsGrid = () => {
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-        <p className="text-gray-400 text-sm mb-4 line-clamp-2">{project.description}</p>
+        <h3 className="text-xl font-semibold text-white mb-2">
+          {project.title}
+        </h3>
+        <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+          {project.description}
+        </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech) => (
             <span
@@ -137,17 +155,6 @@ const ProjectsGrid = () => {
     </div>
   );
 
-  // Filter and slice visible projects
-  const filteredProjects = projects.filter(
-    (project) => activeFilter === 'all' || project.category === activeFilter
-  );
-  const visibleProjects = filteredProjects.slice(0, visibleCount);
-
-  // Handle Load More
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 4); // 👈 Load 4 more each time
-  };
-
   return (
     <div className="min-h-screen bg-gray-900 p-6 lg:p-12">
       <div className="max-w-7xl mx-auto">
@@ -167,15 +174,11 @@ const ProjectsGrid = () => {
           {categories.map((category) => (
             <button
               key={category.id}
-              onClick={() => {
-                setActiveFilter(category.id);
-                setVisibleCount(4); // 👈 Reset to 4 when category changes
-              }}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeFilter === category.id
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
-              }`}
+              onClick={() => setActiveFilter(category.id)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all
+                ${activeFilter === category.id 
+                  ? 'bg-blue-500 text-white' 
+                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}`}
             >
               {category.name}
             </button>
@@ -184,24 +187,21 @@ const ProjectsGrid = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {visibleProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          {projects
+            .filter(project => activeFilter === 'all' || project.category === activeFilter)
+            .map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
         </div>
 
         {/* Load More Button */}
-        {visibleCount < filteredProjects.length && (
-          <div className="text-center mt-12">
-            <button
-              onClick={handleLoadMore}
-              className="px-8 py-3 bg-gray-800 text-white rounded-lg font-medium 
-              transform transition-all duration-200 hover:bg-gray-700
-              focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
-            >
-              Load More Projects
-            </button>
-          </div>
-        )}
+        <div className="text-center mt-12">
+          <button className="px-8 py-3 bg-gray-800 text-white rounded-lg font-medium 
+            transform transition-all duration-200 hover:bg-gray-700
+            focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+            Load More Projects
+          </button>
+        </div>
       </div>
     </div>
   );
