@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { FaGithub, FaEye } from 'react-icons/fa'; 
-import { AiOutlineLink } from 'react-icons/ai'; 
+import { FaGithub, FaEye } from 'react-icons/fa';
+import { AiOutlineLink } from 'react-icons/ai';
 
 // Import images
 import esharkImage from "../assets/eshark.png";
 import faceDetectionImage from "../assets/face detection.webp";
 import studentAbnormalImage from "../assets/student abnormal.jpg";
-import vehiclesurveillanceImage from "../assets/vehicle.png"
+import vehiclesurveillanceImage from "../assets/vehicle.png";
 import FeedbackERPImage from "../assets/feedback.png";
 
 const ProjectsGrid = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+  const [visibleCount, setVisibleCount] = useState(4); // show first 4 projects initially
 
   const projects = [
     {
@@ -19,12 +20,7 @@ const ProjectsGrid = () => {
       description: "A full-stack e-commerce platform designed with real-time inventory management and payment processing features, built using modern technologies for a seamless shopping experience.",
       image: esharkImage,
       category: "web",
-      technologies: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP"
-      ],
+      technologies: ["HTML", "CSS", "JavaScript", "PHP"],
       liveUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
       githubUrl: "https://github.com/akashshinde0775/e-shark-platform.git",
     },
@@ -34,11 +30,7 @@ const ProjectsGrid = () => {
       description: "A machine learning-based system for detecting abnormal student behavior during exams, including unauthorized device usage and suspicious actions in real-time.",
       image: studentAbnormalImage,
       category: "ai",
-      technologies: [
-        "Python",
-        "YOLO",
-        "React"
-      ],
+      technologies: ["Python", "YOLO", "React"],
       liveUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
       githubUrl: "https://github.com/akashshinde0775/Student-Abnormal-Behavior-Detection.git",
     },
@@ -48,53 +40,52 @@ const ProjectsGrid = () => {
       description: "A face detection application that uses computer vision algorithms to detect and track human faces in real-time from video streams.",
       image: faceDetectionImage,
       category: "ai",
-      technologies: [
-        "Deep Learning",
-        "OpenCV",
-        "Python",
-        "MTCNN",
-      ],
+      technologies: ["Deep Learning", "OpenCV", "Python", "MTCNN"],
       liveUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
       githubUrl: "https://github.com/akashshinde0775/Face-Detection-project.git",
     },
     {
       id: 4,
       title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
-      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
+      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition.",
       image: vehiclesurveillanceImage,
       category: "ai",
-      technologies: [
-        "Python",
-        "YOLOv8",
-        "DeepSort",
-        "OpenCV"
-      ],
+      technologies: ["Python", "YOLOv8", "DeepSort", "OpenCV"],
       liveUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
       githubUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
-    }, 
+    },
     {
       id: 5,
-      title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
-      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
+      title: "College Feedback Management System",
+      description: "A full-stack web application for managing student feedback in college. It allows students to submit course and faculty feedback online, and administrators to analyze and visualize responses for quality improvement and decision-making.",
       image: FeedbackERPImage,
       category: "web",
-      technologies: [
-        "ReactJS",
-        "NodeJS",
-        "TailwindCSS",
-        "MongoDB"
-      ],
+      technologies: ["ReactJS", "NodeJS", "TailwindCSS", "MongoDB"],
       liveUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
       githubUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
-    }, 
+    },
   ];
-  
+
   const categories = [
     { id: 'all', name: 'All Projects' },
     { id: 'ai', name: 'AI/ML' },
     { id: 'web', name: 'Web Projects' },
     { id: 'android', name: 'Android Projects' },
   ];
+
+  const filteredProjects = projects.filter(
+    (project) => activeFilter === 'all' || project.category === activeFilter
+  );
+
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+
+  const handleLoadMore = () => {
+    if (visibleCount < filteredProjects.length) {
+      setVisibleCount(filteredProjects.length);
+    } else {
+      setVisibleCount(4); // toggle back to 4 if already showing all
+    }
+  };
 
   const ProjectCard = ({ project }) => (
     <div className="group bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
@@ -174,10 +165,13 @@ const ProjectsGrid = () => {
           {categories.map((category) => (
             <button
               key={category.id}
-              onClick={() => setActiveFilter(category.id)}
+              onClick={() => {
+                setActiveFilter(category.id);
+                setVisibleCount(4); // reset to 4 when filter changes
+              }}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all
-                ${activeFilter === category.id 
-                  ? 'bg-blue-500 text-white' 
+                ${activeFilter === category.id
+                  ? 'bg-blue-500 text-white'
                   : 'bg-gray-800 text-gray-400 hover:bg-gray-700'}`}
             >
               {category.name}
@@ -187,21 +181,24 @@ const ProjectsGrid = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {projects
-            .filter(project => activeFilter === 'all' || project.category === activeFilter)
-            .map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
+          {visibleProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
 
         {/* Load More Button */}
-        <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-gray-800 text-white rounded-lg font-medium 
-            transform transition-all duration-200 hover:bg-gray-700
-            focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
-            Load More Projects
-          </button>
-        </div>
+        {filteredProjects.length > 4 && (
+          <div className="text-center mt-12">
+            <button
+              onClick={handleLoadMore}
+              className="px-8 py-3 bg-gray-800 text-white rounded-lg font-medium 
+                transform transition-all duration-200 hover:bg-gray-700
+                focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900"
+            >
+              {visibleCount < filteredProjects.length ? 'Load More Projects' : 'Show Less'}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
