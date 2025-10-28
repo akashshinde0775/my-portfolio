@@ -71,6 +71,21 @@ const ProjectsGrid = () => {
       liveUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
       githubUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
     }, 
+    {
+      id: 4,
+      title: "AI-Driven Vehicle Surveillance and License Plate Recognition",
+      description: "AI-Based surveillance for vehicle that detect, classify, tracking and counting and licence plate recoginition ",
+      image: vehiclesurveillanceImage,
+      category: "ai",
+      technologies: [
+        "Python",
+        "YOLOv8",
+        "DeepSort",
+        "OpenCV"
+      ],
+      liveUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
+      githubUrl: "https://github.com/akashshinde0775/vehicle-surveillance-system.git",
+    }, 
   ];
   
 

@@ -9,13 +9,13 @@ const SkillsSection = () => {
       id: "languages",
       name: "Programming Languages",
       icon: <FaCode size={24} />,
-      skills: ["Python", "Java", "R"]
+      skills: ["Java", "Python", "R", "SQL"]
     },
     {
       id: "development",
       name: "Development",
       icon: <FaLayerGroup size={24} />,
-      skills: ["Web Development", "Android App Development", "Machine Learning Model Development"]
+      skills: ["AI Model Development", "Web Development", "Android App Development"]
     },
     {
       id: "technical",
@@ -27,7 +27,7 @@ const SkillsSection = () => {
       id: "frameworks",
       name: "Frameworks & Libraries",
       icon: <FaLayerGroup size={24} />,
-      skills: ["Bootstrap", "Tailwind", "ReactJS", "YOLO", "OpenCV", "NumPy & Pandas", "Scikit-Learn"]
+      skills: ["YOLO", "OpenCV", "NumPy & Pandas", "Scikit-Learn", "Bootstrap", "Tailwind", "ReactJS"]
     }
   ];
 

@@ -8,7 +8,7 @@ const AboutSection = ({
   name = "Akash Shinde",
   title = "AI & DS Engineer",
   location = "Solapur, Maharastra",
-  projects = "3+ Completed",
+  projects = "4+ Completed",
   email = "akashshinde0775@gmail.com",
   bio = `Passionate AI & Data Science professional with expertise in machine learning, computer vision, web development, and both frontend & backend technologies. 
   Skilled in AI/ML tools, always driven to innovate and solve complex problems.`,
@@ -21,7 +21,7 @@ const AboutSection = ({
   }
 }) => {
   const stats = [
-    { label: 'Projects Completed', value: '3+' },
+    { label: 'Projects Completed', value: '4+' },
     { label: 'Certifications Earned', value: '5+' },
     { label: 'Skills Learned', value: '15+' },
     { label: 'Papers & Publications', value: '1+' } // If you've worked on a conference paper
