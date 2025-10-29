@@ -1,6 +1,6 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
-import resume1 from '../assets/resume1.pdf';
+import resume3 from '../assets/resume3.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
@@ -10,8 +10,7 @@ const AboutSection = ({
   location = "Solapur, Maharastra",
   projects = "4+ Completed",
   email = "akashshinde0775@gmail.com",
-  bio = `Passionate AI & Data Science professional with expertise in machine learning, computer vision, web development, and both frontend & backend technologies. 
-  Skilled in AI/ML tools, always driven to innovate and solve complex problems.`,
+  bio = `Aspiring Artificial Intelligence and Data Science professional with hands-on experience in real-time machine learning projects and Android & Web projects. Skilled in JAVA, Python, ML, and AI seeking to leverage my technical expertise in an internship to solve challenging problems.`,
 
 
   socialLinks = {
@@ -98,7 +97,7 @@ const AboutSection = ({
 
                 {/* Download CV Button */}
                 <a
-                  href={resume1}
+                  href={resume3}
                   download="resume1.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
