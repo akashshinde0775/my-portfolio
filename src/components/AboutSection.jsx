@@ -1,6 +1,6 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
-import resume3 from '../assets/resume3.pdf';
+import resume3 from '../assets/Akash_Shinde_Resume.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
@@ -8,9 +8,12 @@ const AboutSection = ({
   name = "Akash Shinde",
   title = "AI & DS Engineer",
   location = "Solapur, Maharastra",
-  projects = "4+ Completed",
+  projects = "8+ Completed",
   email = "akashshinde0775@gmail.com",
-  bio = `Aspiring Artificial Intelligence and Data Science professional with hands-on experience in real-time machine learning projects and Android & Web projects. Skilled in JAVA, Python, ML, and AI seeking to leverage my technical expertise in an internship to solve challenging problems.`,
+  bio = `Aspiring AI & Data Science engineer with hands-on experience in machine learning, deep learning, and computer vision projects. 
+  Skilled in Python, Java, SQL, and full-stack development with React and Node.js. 
+  Seeking an internship or entrylevel role to apply my technical expertise in developing intelligent, real-world AI solutions.
+  `,
 
 
   socialLinks = {
@@ -20,7 +23,7 @@ const AboutSection = ({
   }
 }) => {
   const stats = [
-    { label: 'Projects Completed', value: '4+' },
+    { label: 'Projects Completed', value: '8+' },
     { label: 'Certifications Earned', value: '5+' },
     { label: 'Skills Learned', value: '15+' },
     { label: 'Papers & Publications', value: '1+' } // If you've worked on a conference paper
@@ -97,8 +100,8 @@ const AboutSection = ({
 
                 {/* Download CV Button */}
                 <a
-                  href={resume3}
-                  download="resume1.pdf"
+                  href={Akash_Shinde_Resume}
+                  download="Akash_Shinde_Resume.pdf"
                   className="w-full mt-6 px-4 py-2.5 bg-blue-500 text-white rounded-lg 
                    flex items-center justify-center gap-2 hover:bg-blue-600 transition-colors"
                 >

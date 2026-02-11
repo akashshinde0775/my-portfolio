@@ -8,6 +8,8 @@ import faceDetectionImage from "../assets/face detection.webp";
 import studentAbnormalImage from "../assets/student abnormal.jpg";
 import vehiclesurveillanceImage from "../assets/vehicle.png";
 import FeedbackERPImage from "../assets/feedback.png";
+import CNNImage from "../assets/CNNImage.webp";
+import EmotionDetectionImage from "../assets/EmotionDetectionImage.png";
 
 const ProjectsGrid = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -64,6 +66,28 @@ const ProjectsGrid = () => {
       liveUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
       githubUrl: "https://github.com/akashshinde0775/Feedback_ERP.git",
     },
+    {
+      id: 6,
+      title: "Image Classification using CNN (MNIST)",
+      description: "An end-to-end deep learning project that classifies handwritten digits (0–9) using Convolutional Neural Networks. The system includes custom IDX data loading, preprocessing, CNN architecture design with Batch Normalization and Dropout, model training, evaluation using confusion matrix, and prediction visualization. Achieved high accuracy on the MNIST test dataset.",
+      image: CNNImage, // replace with your actual imported image variable
+      category: "ai",
+      technologies: ["Python", "TensorFlow", "Keras", "NumPy", "Matplotlib"],
+      liveUrl: "https://github.com/akashshinde0775/Image_Classification_Using_CNN.git", 
+      githubUrl: "https://github.com/akashshinde0775/Image_Classification_Using_CNN.git",
+    },
+    {
+      id: 7,
+      title: "Emotion Detection from Text using NLP",
+      description: "An NLP-based machine learning project that detects human emotions such as joy, sadness, anger, fear, love, and surprise from textual input. The system uses text preprocessing (tokenization, stopword removal, lemmatization), TF-IDF feature extraction, and a Multinomial Naive Bayes classifier. Model performance was evaluated using accuracy, precision, recall, F1-score, and confusion matrix, with a real-time prediction function for user input.",
+      image: EmotionDetectionImage, // replace with your actual imported image variable
+      category: "ai",
+      technologies: ["Python", "NLTK", "Scikit-learn", "TF-IDF", "Pandas"],
+      liveUrl: "https://github.com/akashshinde0775/Emotion-Detection-from-Text.git",
+      githubUrl: "https://github.com/akashshinde0775/Emotion-Detection-from-Text.git",
+    },
+    
+    
   ];
 
   const categories = [

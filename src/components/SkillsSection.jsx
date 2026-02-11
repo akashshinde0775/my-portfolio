@@ -9,7 +9,7 @@ const SkillsSection = () => {
       id: "languages",
       name: "Programming Languages",
       icon: <FaCode size={24} />,
-      skills: ["Java", "Python", "R", "SQL"]
+      skills: ["Python", "Java", "R", "SQL"]
     },
     {
       id: "development",
@@ -21,13 +21,13 @@ const SkillsSection = () => {
       id: "technical",
       name: "Technical Skills",
       icon: <FaTools size={24} />,
-      skills: ["Data Structures & Algorithms (DSA)", "SQL & NoSQL Databases", "Git & GitHub", "Operating Systems"]
+      skills: ["Data Structures & Algorithms (DSA)", "MySQL & MongoDB", "Git & GitHub", "Operating Systems","Visual Studio Code", "Google Colab"]
     },
     {
       id: "frameworks",
       name: "Frameworks & Libraries",
       icon: <FaLayerGroup size={24} />,
-      skills: ["YOLO", "OpenCV", "NumPy & Pandas", "Scikit-Learn", "Bootstrap", "Tailwind", "ReactJS"]
+      skills: ["YOLO", "OpenCV", "NumPy & Pandas","PyTorch", "TensorFlow", "Matplotlib", "Seaborn", "Scikit-Learn", "Bootstrap", "Tailwind", "ReactJS"]
     }
   ];
 
