@@ -2,7 +2,16 @@ import React from 'react';
 import akashPic from '../assets/akash.jpg';
 import Akash_Shinde_Resume from '../assets/Akash_Shinde_Resume.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
-import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
+import { 
+  FaEnvelope as Mail, 
+  FaMapMarkerAlt as MapPin, 
+  FaCalendarAlt as Calendar, 
+  FaDownload as Download, 
+  FaGithub as Github, 
+  FaLinkedin as Linkedin, 
+  FaTwitter as Twitter,
+  FaPhone as Phone   
+} from 'react-icons/fa';
 
 const AboutSection = ({
   name = "Akash Shinde",
@@ -10,11 +19,11 @@ const AboutSection = ({
   location = "Solapur, Maharastra",
   projects = "8+ Completed",
   email = "akashshinde0775@gmail.com",
+  phone = "+91 7218860775", 
   bio = `Aspiring AI & Data Science engineer with hands-on experience in machine learning, deep learning, and computer vision projects. 
   Skilled in Python, Java, SQL, and full-stack development with React and Node.js. 
   Seeking an internship or entrylevel role to apply my technical expertise in developing intelligent, real-world AI solutions.
   `,
-
 
   socialLinks = {
     github: "https://github.com/akashshinde0775",
@@ -26,7 +35,7 @@ const AboutSection = ({
     { label: 'Projects Completed', value: '8+' },
     { label: 'Certifications Earned', value: '5+' },
     { label: 'Skills Learned', value: '15+' },
-    { label: 'Papers & Publications', value: '1+' } // If you've worked on a conference paper
+    { label: 'Papers & Publications', value: '1+' }
   ];
 
   return (
@@ -40,6 +49,7 @@ const AboutSection = ({
           <div className="lg:col-span-1">
             <div className="sticky top-6">
               <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                
                 {/* Profile Image */}
                 <div className="relative w-48 h-48 mx-auto mb-6">
                   <div className="w-full h-full rounded-xl overflow-hidden">
@@ -86,12 +96,21 @@ const AboutSection = ({
                     <MapPin size={18} />
                     <span>{location}</span>
                   </div>
+
                   <div className="flex items-center gap-3 text-gray-400">
                     <Mail size={18} />
                     <a href={`mailto:${email}`} className="hover:text-blue-400 transition-colors">
                       {email}
                     </a>
                   </div>
+
+                  <div className="flex items-center gap-3 text-gray-400">
+                    <Phone size={18} />
+                    <a href={`tel:${phone}`} className="hover:text-blue-400 transition-colors">
+                      {phone}
+                    </a>
+                  </div>
+
                   <div className="flex items-center gap-3 text-gray-400">
                     <Project size={18} />
                     <span>{projects} Projects </span>
