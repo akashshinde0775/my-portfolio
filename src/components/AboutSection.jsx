@@ -1,6 +1,6 @@
 import React from 'react';
 import akashPic from '../assets/akash.jpg';
-import resume3 from '../assets/Akash_Shinde_Resume.pdf';
+import Akash_Shinde_Resume from '../assets/Akash_Shinde_Resume.pdf';
 import { FaProjectDiagram as Project } from 'react-icons/fa';
 import { FaEnvelope as Mail, FaMapMarkerAlt as MapPin, FaCalendarAlt as Calendar, FaDownload as Download, FaGithub as Github, FaLinkedin as Linkedin, FaTwitter as Twitter } from 'react-icons/fa';
 
